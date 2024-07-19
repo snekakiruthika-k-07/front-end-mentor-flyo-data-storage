@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fylo Data Storage</title>
+    <style>
+        body{
+            background-color: rgb(10, 1, 63);
+        }
+        .content{
+            background-color: rgb(4, 6, 143);
+            border-radius: 0px 50px 0px 0px;
+            border-style: solid;
+            height:150px;
+            width:225px;
+            margin:50px;
+            border-color: rgb(4, 6, 143);
+        }
+        .title{
+            display: inline-block;
+            color:white;
+        }
+        .rectangle{
+            margin-left:10px;
+            margin-top:-10px;
+        }
+        .rectangle h3{
+            display:inline-block;
+            margin-top:-10px;
+            margin-left:-8px;
+            margin-right:15px;
+        }
+        .file{
+            border-radius: 15px;
+            border-style: solid;
+            background-color: black;
+            height:25px;
+            padding:5px;
+        }
+        .folder{
+            border-radius: 15px;
+            border-style: solid;
+            background-color: black;
+            height:25px;
+            padding:5px;
+        }
+        .download{
+            border-radius: 15px;
+            border-style: solid;
+            background-color: black;
+            height:25px;
+            padding:5px;
+        }
+        .inbetween{
+            border-radius:10px 10px 0px 10px;
+            color:rgb(1, 1, 82);
+            background-color: white;
+            border-style: solid;
+            border-color: white;
+            display:inline-block;
+            width:150px;
+            height:50px;
+            margin-left: 210px;
+            padding:0px 0px 10px 20px;
+        }
+        .inbetween p{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .inbetween h1{
+            display:inline-block;
+        }
+        .section{
+            border-radius: 25px;
+            border-style: solid;
+            border-color: rgb(1, 2, 54);
+            color:white;
+            width:350px;
+            background-color: rgb(4, 6, 143);
+            margin-top: -20px;
+            padding:20px;
+            height:100px;
+        }
+        .end{
+            margin-left:280px;
+            margin-top: -35px;
+        }
+        input{
+            width:325px;
+            accent-color: rgb(219, 9, 97);
+        }
+        .container1{
+             margin-left: 300px;
+             margin-top: -230px;
+        }
+        .right-angle-triangle {
+            width: 0;
+            height: 0;
+            border-top: 40px solid #ffffff; /* Adjust the color and size as needed */
+            border-right: 40px solid transparent;
+            margin-left: 113px; 
+            margin-top: -30px;
+            rotate:90deg;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">🛢️FYLO</h1>
+            <br><br><div class="rectangle">
+                <h3 class="file">📄</h3>
+                <h3 class="folder">📁</h3>
+                <h3 class="download">
+                  📥
+                </h3>
+            </div>
+        </div>
+        <div class="container1">
+        <div class="inbetween">
+            <h1>185</h1><p>GB LEFT</p>
+            <div class="right-angle-triangle"></div>
+        </div>
+        <div class="section">
+            <p>You've used <b>815 GB </b> of your storage</p>
+            <label for="memory" class="accent"></label>
+            <input type="range" name="memory" class="accent" min="0" max="1000">
+            <p class="start">0GB               </p><p class="end">                                   1000GB</p>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
